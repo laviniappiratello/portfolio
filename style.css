@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ajuda no controle de dimensões */
+}
+
+body {
+  background: linear-gradient(to bottom, white, #C7A2A2);
+  min-height: 100vh; /* Garante que o body ocupe 100% da altura da tela */
+  display: flex;
+  flex-direction: column; /* Organiza o conteúdo em uma coluna vertical */
+}
+
+header {
+  display: flex;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  background-color: #773739;
+  padding: 20px; /* Adiciona padding ao header para melhor visualização */
+
+  justify-content: space-between;
+  color: white;
+
+  font-size: 40px;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+#sobremim {
+  display: flex; /* Flexbox para alinhar os itens horizontalmente */
+  align-items: center; /* Centraliza verticalmente os itens */
+  padding: 20px;
+  flex-wrap: wrap; /* Permite que os itens quebrem para a linha abaixo em telas pequenas */
+}
+
+
+h1 {
+  color: #773739;
+}
+
+#api, #timer {
+  background-color: #773739;
+}
+
+
+#btnskills {
+  display: flex; /* Usar flexbox para alinhar os botões em linha */
+  flex-wrap: wrap; /* Permite que os botões se movam para a próxima linha se não houver espaço suficiente */
+
+}
+
+#btnskills button {
+  background-color: #773739;
+
+  color: white;
+
+  border-radius: 10px;
+  padding: 20px 120px; 
+
+
+  transition: background-color 0.3s; /* Efeito suave ao passar o mouse */
+
+
+  border: none; /* Remove a borda padrão */
+
+  max-width: 250px; /* Define um tamanho máximo para o botão */
+
+  font-size: 30px; /* Tamanho da fonte padrão */
+  display: flex; /* Usar flexbox para centralizar o texto */
+  justify-content: center; /* Centraliza horizontalmente o texto */
+
+  margin: 15px; /* Espaço entre os botões */
+
+ 
+}
+
+#btnskills button:hover{
+    background-color: #462122; /* Cor de fundo ao passar o mouse */
+}
+
+#Projetos button{
+ margin: 15px;
+ border-radius: 10px;
+ padding: 20px 120px; 
+}
+#contatos {
+  display: flex;
+
+}
+
+/* Garante que o footer esteja sempre no final da página */
+footer {
+  color: #773739;
+  background-color: transparent; /* Pode adicionar um fundo diferente para contraste */
+  padding: 20px;
+  text-align: center;
+  margin-top: auto; /* Empurra o footer para o final da página */
+}
