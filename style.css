@@ -1,11 +1,51 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; /* Ajuda no controle de dimensões */
+
+  font-family: 'Open Sans', sans-serif;
+ 
 }
 
+main {
+  background: linear-gradient(to top, white, #807c7c);
+}
+
+
+
+
+.custom-hr {
+
+  background-color: black; /* Cor da linha */
+  border: none; /* Remove qualquer borda padrão */
+
+  width: 95%; /* A linha ocupará toda a largura do contêiner */
+
+height: 1.5px; /* Define a espessura da linha */
+
+
+}
+
+
+#sobremim {
+  display: flex; /* Usa Flexbox para alinhar os itens */
+  margin:3% 5%; /* Espaçamento interno */
+  align-items: center;
+}
+
+#texto {
+  max-width: 60%; /* Define uma largura máxima para o texto */
+
+}
+
+#sobremim img {
+  margin-left: 5%;
+  max-width: 400px; /* Define um tamanho máximo para a imagem */
+  flex-shrink: 0; /* Evita que a imagem encolha */
+}
+
+
+
+
 body {
-  background: linear-gradient(to bottom, white, #C7A2A2);
+  background: linear-gradient(to top, white, #807c7c);
   min-height: 100vh; /* Garante que o body ocupe 100% da altura da tela */
   display: flex;
   flex-direction: column; /* Organiza o conteúdo em uma coluna vertical */
@@ -13,88 +53,152 @@ body {
 
 header {
   display: flex;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-  background-color: #773739;
+
   padding: 20px; /* Adiciona padding ao header para melhor visualização */
-
+  background-color: transparent;
   justify-content: space-between;
-  color: white;
+  color: black;
 
-  font-size: 40px;
+  font-size: 20px;
 }
 
-a{
-  color: white;
+nav a{
+  color: black;
   text-decoration: none;
+  padding: 10px;
 }
 
-#sobremim {
-  display: flex; /* Flexbox para alinhar os itens horizontalmente */
-  align-items: center; /* Centraliza verticalmente os itens */
-  padding: 20px;
-  flex-wrap: wrap; /* Permite que os itens quebrem para a linha abaixo em telas pequenas */
+nav a:hover{
+color: #565353;
+
+}
+
+#Projetos a{
+  color: black;
+  text-decoration: none;
+  font-size: larger;
+  
 }
 
 
 h1 {
-  color: #773739;
+  color: #000000;
+  font-weight: bold;
+  font-weight: 600;
+  margin:0% 9.5%; /* Espaçamento interno */
 }
 
-#api, #timer {
-  background-color: #773739;
+h2{
+  font-weight:inherit;
+  text-align: left;
+  flex-wrap: wrap;
+  margin:0% 9.5%; /* Espaçamento interno */
 }
 
 
-#btnskills {
-  display: flex; /* Usar flexbox para alinhar os botões em linha */
-  flex-wrap: wrap; /* Permite que os botões se movam para a próxima linha se não houver espaço suficiente */
-
+#skills-container {
+  margin: 5%;
+  display: flex;
+  gap: 0% 5%;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-#btnskills button {
-  background-color: #773739;
 
-  color: white;
+#apicard, #timercard{
+  display: flex;
+  margin: 5%;
+  display: flex;
+  gap: 0% 5%;
+  justify-content:center;
+  flex-wrap: wrap;
 
+  align-items: center;
+}
+
+#imagemdotimer, #imagemapi{
+  justify-content: space-between;
+
+  flex-shrink: 0; /* Evita que a imagem encolha */
+
+
+  width: 50%; /* Define uma largura fixa */
+
+  object-fit: cover; /* Cobre o espaço disponível sem distorcer */
+}
+#apicard button{
+  background-color:#76C7CC ;
+  margin: 15px;
+  border: none;
   border-radius: 10px;
   padding: 20px 120px; 
+  font-weight: bold;
 
-
-  transition: background-color 0.3s; /* Efeito suave ao passar o mouse */
-
-
-  border: none; /* Remove a borda padrão */
-
-  max-width: 250px; /* Define um tamanho máximo para o botão */
-
-  font-size: 30px; /* Tamanho da fonte padrão */
-  display: flex; /* Usar flexbox para centralizar o texto */
-  justify-content: center; /* Centraliza horizontalmente o texto */
-
-  margin: 15px; /* Espaço entre os botões */
+  cursor: pointer;
+ }
 
  
+#timercard button{
+  background-color:#ffffff ;
+  margin: 15px;
+  border: none;
+  border-radius: 10px;
+  padding: 20px 120px; 
+  font-weight: bold;
+
+  cursor: pointer;
 }
 
-#btnskills button:hover{
-    background-color: #462122; /* Cor de fundo ao passar o mouse */
-}
-
-#Projetos button{
- margin: 15px;
- border-radius: 10px;
- padding: 20px 120px; 
-}
-#contatos {
+#contatos  {
   display: flex;
+  gap: 10%;
+  
 
+  justify-content: center;
+}
+#contatos button {
+
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
-/* Garante que o footer esteja sempre no final da página */
+
 footer {
-  color: #773739;
+  color: #000000;
   background-color: transparent; /* Pode adicionar um fundo diferente para contraste */
   padding: 20px;
   text-align: center;
   margin-top: auto; /* Empurra o footer para o final da página */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  #sobremim {
+      flex-direction: column; /* Em telas menores, organiza os itens em coluna */
+      align-items: center; /* Centraliza os itens */
+  }
+  
+  #texto {
+      max-width: 100%; /* Permite que o texto ocupe toda a largura */
+      text-align: center; /* Centraliza o texto */
+  }
+
+  #sobremim img {
+      margin-left: 0; /* Remove a margem esquerda em telas pequenas */
+      margin-top: 20px; /* Adiciona margem superior para separação */
+  }
 }
