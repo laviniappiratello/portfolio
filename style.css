@@ -8,7 +8,9 @@ main {
   background: linear-gradient(to top, white, #807c7c);
 }
 
-
+.navbar {
+  background-color: #827e7e;
+}
 
 
 .custom-hr {
@@ -16,10 +18,9 @@ main {
   background-color: black; /* Cor da linha */
   border: none; /* Remove qualquer borda padrão */
 
-  width: 95%; /* A linha ocupará toda a largura do contêiner */
+  width: 100%; /* A linha ocupará toda a largura do contêiner */
 
-height: 1.5px; /* Define a espessura da linha */
-
+  height: 1.5px; /* Define a espessura da linha */
 
 }
 
@@ -41,9 +42,6 @@ height: 1.5px; /* Define a espessura da linha */
   flex-shrink: 0; /* Evita que a imagem encolha */
 }
 
-
-
-
 body {
   background: linear-gradient(to top, white, #807c7c);
   min-height: 100vh; /* Garante que o body ocupe 100% da altura da tela */
@@ -52,109 +50,41 @@ body {
 }
 
 header {
-  display: flex;
-
-  padding: 20px; /* Adiciona padding ao header para melhor visualização */
-  background-color: transparent;
-  justify-content: space-between;
-  color: black;
-
   font-size: 20px;
 }
 
-nav a{
-  color: black;
-  text-decoration: none;
-  padding: 10px;
-}
 
-nav a:hover{
-color: #565353;
-
-}
-
-#Projetos a{
-  color: black;
-  text-decoration: none;
-  font-size: larger;
-  
-}
 
 
 h1 {
   color: #000000;
   font-weight: bold;
   font-weight: 600;
-  margin:0% 9.5%; /* Espaçamento interno */
+  margin:0% 9.5%; 
 }
 
 h2{
   font-weight:inherit;
   text-align: left;
   flex-wrap: wrap;
-  margin:0% 9.5%; /* Espaçamento interno */
+  margin:0% 9.5%; 
 }
 
 
 #skills-container {
   margin: 5%;
   display: flex;
-  gap: 0% 5%;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 
-#apicard, #timercard{
-  display: flex;
-  margin: 5%;
-  display: flex;
-  gap: 0% 5%;
-  justify-content:center;
-  flex-wrap: wrap;
-
-  align-items: center;
-}
-
-#imagemdotimer, #imagemapi{
-  justify-content: space-between;
-
-  flex-shrink: 0; /* Evita que a imagem encolha */
-
-
-  width: 50%; /* Define uma largura fixa */
-
-  object-fit: cover; /* Cobre o espaço disponível sem distorcer */
-}
-#apicard button{
-  background-color:#76C7CC ;
-  margin: 15px;
-  border: none;
-  border-radius: 10px;
-  padding: 20px 120px; 
-  font-weight: bold;
-
-  cursor: pointer;
- }
-
  
-#timercard button{
-  background-color:#ffffff ;
-  margin: 15px;
-  border: none;
-  border-radius: 10px;
-  padding: 20px 120px; 
-  font-weight: bold;
-
-  cursor: pointer;
-}
-
 #contatos  {
   display: flex;
   gap: 10%;
-  
-
   justify-content: center;
+  flex-wrap: wrap;
 }
 #contatos button {
 
